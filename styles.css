@@ -98,6 +98,8 @@ body {
     border: 1px solid teal;
     border-radius: 3px;
     flex: 0 0 10rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .card__img {

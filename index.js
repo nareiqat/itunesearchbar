@@ -12,7 +12,7 @@ searchBar.addEventListener('keyup', (e) => {
     fetchJsonp(`https://itunes.apple.com/search?term=${searchString}&media=music&entity=album&attribute=artistTerm&limit=50`)
     .then(resp => resp.json())
     .then(res => {
-        const newtitle = `${res.resultCount} reults were ${searchString}` 
+        const newtitle = `${res.resultCount} reults for ${searchString}` 
         if(info !== newtitle){
             info.innerHTML = newtitle 
         }
